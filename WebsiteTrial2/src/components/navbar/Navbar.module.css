@@ -1,0 +1,56 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /* will put space between portflio and the navbar optuons*/
+    padding-top: 60px; 
+    z-index: 2;
+    margin: 0 10%; 
+}
+
+.title {
+    font-size: 30px; 
+    font-weight: 600; 
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.menu {
+    display: flex;
+}
+
+.menuItems {
+    display: flex;
+    gap: 50px; 
+    list-style: none; /*Gets rid of bullet points*/
+}
+
+.menuItems a {
+    font-size: 25px; 
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/* creating underline animation for navbar */
+.menuItems a::after {
+   content: ''; 
+   height: 3px;
+   background: rgb(65,105,225);
+   display: block;
+   left: 0;
+   bottom: -2px;
+   opacity: 0;
+   transform: scaleX(0);
+   transform-origin: center;
+   transition: transform 0.3s;
+   pointer-events: none;
+}
+
+.menuItems a:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+ }
+
+ /*  */
