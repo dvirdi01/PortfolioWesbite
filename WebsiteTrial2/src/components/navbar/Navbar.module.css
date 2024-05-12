@@ -1,6 +1,25 @@
 @import "../../vars.css";
 
 .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /* will put space between portflio and the navbar optuons*/
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 0.5px solid rgba(45, 45, 45, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background: rgba(45, 45, 45, 0.47);
+    /* backdrop-filter: blur(10px); */
+    transition: 0.1s;
+}
+
+.navbarscroll {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,14 +29,17 @@
     align-items: center;
     justify-content: space-between; /* will put space between portflio and the navbar optuons*/
     padding: 15px; 
-    z-index: 20;
-    background: rgb(138, 36, 36);
+    padding-left: 5%;
+    padding-right: 5%;
+    background: rgba(45, 45, 45, 0.47);
+    backdrop-filter: blur(10px);
 }
 
 .title {
     font-size: 30px; 
-    font-weight: 600; 
+    font-weight: 400; 
     text-decoration: none;
+    font-family: "Linden Hill", serif;
     color: var(--color-text);
 }
 
@@ -27,7 +49,7 @@
 
 .menuItems {
     display: flex;
-    gap: 30px; 
+    gap: 48px; 
     list-style: none; /*Gets rid of bullet points*/
 }
 
@@ -35,19 +57,20 @@
     font-size: 25px; 
     color: var(--color-text);
     text-decoration: none;
+    font-family: "Linden Hill", serif;
 }
 
 /* creating underline animation for navbar */
 .menuItems a::after {
    content: ''; 
-   height: 3px;
-   background: rgb(65,105,225);
+   height: 1px;
+   background: rgb(255,255,255);
    display: block;
    left: 0;
    bottom: -2px;
    opacity: 0;
    transform: scaleX(0);
-   transform-origin: center;
+   transform-origin: left;
    transition: transform 0.3s;
    pointer-events: none;
 }
