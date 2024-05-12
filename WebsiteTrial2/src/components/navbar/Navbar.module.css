@@ -1,13 +1,17 @@
 @import "../../vars.css";
 
 .navbar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
     display: flex; 
     align-items: center;
     justify-content: space-between; /* will put space between portflio and the navbar optuons*/
-    padding-top: 60px; 
-    z-index: 2;
-    margin: 0 10%; 
+    padding: 15px; 
+    z-index: 20;
+    background: rgb(138, 36, 36);
 }
 
 .title {
@@ -23,7 +27,7 @@
 
 .menuItems {
     display: flex;
-    gap: 50px; 
+    gap: 30px; 
     list-style: none; /*Gets rid of bullet points*/
 }
 

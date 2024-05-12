@@ -5,8 +5,10 @@ import { Hero } from "./components/navbar/Hero/Hero";
 
 function App() {
   return <div className= {styles.App}>
-    <Navbar/>
-    <Hero />
+    <div className= {styles.overlay}>
+      <Navbar/>
+    </div>
+    {/* <Hero /> */}
   </div>;
 }
 
