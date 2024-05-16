@@ -19,8 +19,8 @@ export const Navbar = () => {
   return <nav className= {color ? styles.navbarscroll : styles.navbar}>
     <a className = {styles.title} href="/">My Portfolio</a> {/* Will take me to main home page when I click on portfolio */}
     <div className= {styles.menu}> {/* div containing my navbar */}
-        <img className = {styles.menuButton} src= {menuOpen ? getImageURL("navbar/closeIcon.png") : getImageURL("navbar/menuIcon.png")} alt="menu-button" 
-        onclick = {() => setMenuOpen(!menuOpen)}/> 
+        {/* <img className = {styles.menuButton} src= {menuOpen ? getImageURL("navbar/closeIcon.png") : getImageURL("navbar/menuIcon.png")} alt="menu-button" 
+        onclick = {() => setMenuOpen(!menuOpen)}/>  */}
 
         <ul className= {`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
         onclick ={() => setMenuOpen(false)}>
