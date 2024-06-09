@@ -91,15 +91,11 @@
 }
 
 .heroimg {
-    position: fixed; bottom: 0px; right: 0px;
     width: 555px;
     height: 525px;
-
-    /* animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; */
-
+    position: relative; /* Positioning relative to the container */
+    bottom: 0; /* Aligns image to the bottom */
+    right: 0; /* Aligns image to the right */
 }
 
 /* @keyframes floating {

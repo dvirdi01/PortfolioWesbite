@@ -1,9 +1,9 @@
 import React from 'react'
 import { getImageURL } from '../../../utils';
-import styles from "./AboutMe.module.css";
+import styles from "./Experience.module.css";
 
-export const AboutMe = () => {
-  return  <section id="about" className={styles.about}>
+export const Experience = () => {
+  return  <section id="experience" className={styles.experience}>
     <div className={styles.container}>
       <h2 className= {styles.title}>About Me</h2>
       <div className= {styles.content}>
